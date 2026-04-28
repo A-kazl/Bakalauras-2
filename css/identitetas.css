@@ -311,6 +311,68 @@
 .primary-type .type-overview   { color: var(--color-text); opacity: 0.45; }
 .secondary-type .type-overview  { color: var(--color-cream); opacity: 0.35; }
 
+/* ── Business Cards ── */
+.biz-cards-section {
+    padding: var(--section-pad) 0;
+    background: var(--color-green-black);
+    overflow: hidden;
+}
+
+.biz-cards-section h2 {
+    font-size: var(--fs-subheading);
+    font-weight: var(--fw-heavy);
+    color: var(--color-sage-light);
+    letter-spacing: 0.16em;
+    margin-bottom: var(--space-lg);
+}
+
+.biz-cards-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.biz-card-wrap {
+    width: 100%;
+    max-width: 560px;
+    perspective: 1000px;
+}
+
+.biz-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.75 / 1;
+    transform-style: preserve-3d;
+    transition: transform 0.65s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.55), 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.biz-card:hover {
+    transform: rotateY(180deg);
+}
+
+.biz-card-front,
+.biz-card-back {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.biz-card-back {
+    transform: rotateY(180deg);
+}
+
+.biz-card-front img,
+.biz-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
     .palette-grid,
