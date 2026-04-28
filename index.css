@@ -17,7 +17,7 @@
 }
 
 .hero-eyebrow {
-    font-size: var(--fs-small);
+    font-size: var(--fs-eyebrow);
     font-weight: var(--fw-heavy);
     letter-spacing: 0.22em;
     color: var(--color-sage-light);
