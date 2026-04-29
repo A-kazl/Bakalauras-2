@@ -77,12 +77,11 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.logo { height: 70px; width: auto; }
+.logo { height: 60px; width: auto; }
 
-nav { display: flex; gap: var(--space-md); }
+nav { display: flex; gap: var(--space-md); margin-left: auto; }
 
 nav a {
     font-family: var(--font-body);

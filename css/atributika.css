@@ -43,7 +43,7 @@
     transform: rotate(180deg);
     padding: 1.25rem 0.75rem;
     font-weight: var(--fw-bold);
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -62,17 +62,18 @@
 }
 
 .card-body img {
-    max-height: 200px;
-    width: auto;
-    object-fit: contain;
-    flex: 1;
+    max-height: 220px;
+}
+
+.card-body img.img-large {
+    max-height: 300px;
 }
 
 .card-price {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: var(--fw-heavy);
     color: var(--color-cream);
-    align-self: flex-start;
+    align-self: center;
 }
 
 .product-card.sage .card-price { color: var(--color-green-dark); }
@@ -82,7 +83,7 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
-    gap: 2rem;
+    gap: 10rem;
 }
 
 .cap {
@@ -93,7 +94,7 @@
 }
 
 .cap img {
-    max-height: 180px;
+    max-height: 160px;
     width: auto;
     object-fit: contain;
     flex: unset;

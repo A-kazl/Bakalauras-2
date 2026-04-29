@@ -1,6 +1,6 @@
 /* ── Brand identity ── */
 .brand-identity {
-    padding: var(--section-pad) 0 calc(var(--section-pad) * 1.4);
+    padding: var(--section-pad) 0;
     background: var(--color-green-black);
 }
 
@@ -18,7 +18,6 @@
     letter-spacing: 0.16em;
     margin-bottom: var(--space-md);
 }
-
 
 .brand-identity-left p {
     color: var(--color-cream);
@@ -43,16 +42,11 @@
     position: relative;
 }
 
-
 .brand-logo2 {
     width: 480px;
     position: relative;
     filter: drop-shadow(0 10px 36px rgba(0,0,0,0.45));
 }
-
-/* ── Forest image ── */
-.forest { line-height: 0; position: relative; }
-.forest img { width: 100%; max-height: 520px; object-fit: cover; }
 
 /* ── Colour palette ── */
 .color-palette {
@@ -67,8 +61,6 @@
     letter-spacing: 0.16em;
     margin-bottom: var(--space-xs);
 }
-
-
 
 .palette-desc {
     max-width: 640px;
@@ -158,7 +150,7 @@
 
 /* ── Logo structure ── */
 .logo-structure {
-    padding: 0 0 var(--space-lg);
+    padding: var(--section-pad) 0;
     background: var(--color-cream);
 }
 
@@ -169,7 +161,6 @@
     letter-spacing: 0.16em;
     margin-bottom: var(--space-md);
 }
-
 
 .logo-text {
     max-width: 640px;
@@ -213,8 +204,7 @@
 .bg-deep    { background: var(--color-green-black); }
 
 /* ── Typography sections ── */
-.typography { padding: var(--section-pad) 0 var(--section-pad); }
-.primary-type { padding-top: 0; }
+.typography { padding: var(--section-pad) 0; }
 
 .primary-type   { background: var(--color-cream); }
 .secondary-type { background: var(--color-green-dark); }
@@ -370,6 +360,37 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+/* ── Social media ── */
+.social-media {
+    padding: var(--section-pad) 0;
+    background: var(--color-cream);
+}
+
+.social-media h2 {
+    font-size: var(--fs-subheading);
+    font-weight: var(--fw-heavy);
+    color: var(--color-green-dark);
+    letter-spacing: 0.16em;
+    margin-bottom: var(--space-md);
+}
+
+.instagram-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.instagram-row img {
+    width: 100%;
+    display: block;
+}
+
+.facebook-row img {
+    width: 100%;
     display: block;
 }
 
